@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgr"
+    tools:context="ru.ereke.appsalem.ErrorActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:background="@drawable/backbtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:text="Ошибка"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginRight="70dp"
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif-condensed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textColorHint="@color/white"
+            android:id="@+id/etPolicyNumberError"
+            android:hint="номер полиса"
+            android:layout_width="250dp" />
+
+        <TextView
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvErrorEmptyET" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgGravity">
+
+
+            <RadioButton
+                android:text="Ошибка курьера"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbErrorCourier"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Неверные данные"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbWrongData"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/dark"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Уже купил"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbAlreadyBought"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Недоступен"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbNotAvailable"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Не заказывал"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbDoNotOrdered"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:id="@+id/tvChooseErr" />
+
+        <Button
+            android:id="@+id/btnRefuse"
+            android:layout_width="229dp"
+            android:text="Отказ клиента"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:layout_height="71dp" />
+    </LinearLayout>
+</LinearLayout>

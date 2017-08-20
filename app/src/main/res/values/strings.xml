@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Delivery</string>
+    <string name="login">Войти</string>
+    <string name="mobile_delivery">Mobile Delivery</string>
+    <string name="code_1c">Код 1С</string>
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Геоданные</string>
+    <string name="title_activity_wellc">Wellc</string>
+    <string name="title_activity_well">Well</string>
+</resources>

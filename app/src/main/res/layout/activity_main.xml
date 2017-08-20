@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="ru.ereke.appsalem.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="93dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        android:layout_height="107dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/mobile_delivery"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:id="@+id/tvMobDel"
+        android:fontFamily="serif" />
+
+    <EditText
+        android:id="@+id/etCodeC1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:hint="@string/code_1c"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErrCode1C"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="0.06" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:onClick="onClick (MainActivity)" />
+
+</LinearLayout>
